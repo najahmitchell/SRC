@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+            //answer = document.querySelector("h2");
+            //selecting the button using the querySelector
+             document.addEventListener('DOMContentLoaded', function() {
+                 let green_button = document.querySelector(".green");
+                 let red_button = document.querySelectorAll(".red");
+
+                 //changing color of the button
+                 green_button.addEventListener('click',function(){
+                 green_button.style.backgroundColor = "green";
+                 })
+                 for (let i=0; i < red_button.length; i++)
+                 {
+                    red_button[i].addEventListener('click',function(){
+                    red_button[i].style.backgroundColor = "red";
+                     })
+                 }
+
+             });
+            // TODO: Add code to check answers to questions
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                    <h3>
+                        Which of the following is delivered at the end of the Sprint?
+                    </h3>
+                            <button class="red">A document containing test cases for the current sprint</button>
+                            <button class="red">An architectural design of the solution</button>
+                            <button class="green">An increment of Done software</button>
+
+                <!-- TODO: Add multiple choice question here -->
+
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+
+                    <h3>True or False: Agile is a set of practices intended to improve the effectiveness of software development professionals, teams, and organizations</h3>
+                        <input type="text" enter here/>
+                        <button>Submit</button>
+
+
+                <!-- TODO: Add free response question here -->
+
+            </div>
+
+        </div>
+    </body>
+</html>
